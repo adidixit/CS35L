@@ -1,0 +1,117 @@
+Name: Aditya Dixit
+UID: 504631002
+
+Prof: Paul Eggert
+TA: Farnoosh Javadi 
+
+Lab #0 
+key.txt
+
+Exercise 1.1: Moving Around in Emacs
+
+1. e m a c s S P e x e r 1 . h t m l 
+
+2. C-s P U B L I C Enter
+
+3. C-s L a  Enter M-b
+
+4. C-s s e l  Enter M-b 
+
+5. C-s a r Enter M-b 
+
+6. C-e 
+
+7. C-a 
+
+8. C-e and C-a 
+
+9. No use of arrow keys. 
+
+10. C-x C-c 
+
+
+Exercise 1.2: Deleting text in Emacs
+
+1. e m a c s S P e x e r 2 . h t m l 
+
+2. C-u 18 M-g M-g C-k
+
+3. C-s <! C-a C-k
+
+4. C-s <! C-k Down C-k Down C-k
+
+5. C-s <! C-k C-s <! C-k
+
+
+Exercise 1.3: Inserting text in Emacs
+
+1. e m a c s SP e x e r 3 . h t m l 
+
+2. C-s A M-f M-f Backspace 37 C-s A M-f M-f Backspace 37
+
+3. C-s UTF-8 M-% US-ASCII Enter y
+
+4. C-x [ C-o C-s <o C-a Enter
+
+5. C-x C-c 
+	diff -u exer1.html exer3.html > exer3.diff Enter
+
+
+Exercise 1.4: Other editing tasks in Emacs
+
+1. cat exer2.html exer2.diff >exer4.html
+
+2. e m a c s SP e x e r 4 . h t m l
+
+3. C-x ] Up Up Up Up UP C-f C-k C-r l i n e s Enter C-k C-y C-a M-y
+
+4. C-s < ! - - d Enter C-a C-f C-k C-r h u n t C-r Enter C-y C-n C-n C-s < ! - - D Enter C-a C-k C-r C-f H o m e w o r k C-r Enter C-y C-n C-n C-s < ! - - Y Enter C-a C-f C-S-2 C-n C-n C-f C-f C-f C-f C-w C-r S u b m i t C-r C-r Enter C-n C-n C-y Enter C-p C-f D e l e t e C-p C-f D e l e t e
+
+5. C-s < / h t m l Enter C-f C-f C-Sp C-x ] 
+
+6. C-x u 
+
+7. C-r - - - e x Enter C-a Enter C-p < ! - - C-x ] - - > 
+
+8. C-s < o l > shows that there are 7 occurences of <ol> 
+	
+	M-% < o l > Enter < O l > Enter y y y y y y y  to do the replacements 
+
+9. diff -u exer1.html exer4.html > exer4.diff 
+
+
+Exercise 1.5: Doing commands in Emacs
+
+1. M-x m a k e - d i r e c t o r y Enter j u n k Enter 
+
+2. C-x C-f ~/junk/hello.c where hello.c contains the code 
+
+3. M-x c o m p i l e Enter h e l l o 
+
+4. C-x b * c o m p i l a t i o n * Enter C-x C-w h e l l o - o u t Enter
+
+5. -*- mode: compilation; default-directory: "~/" -*-
+	Compilation started at Thu Oct  5 10:31:49
+
+	make -k hello 
+	make: 'hello' is up to date. 
+
+	Compilation finished at Thu Oct  5 10:31:49
+
+
+Exercise 1.6: Running Elisp code
+
+1. C-x b * s c r a t c h * Enter 
+
+2. ( r a n d o m ) C-j 
+
+3. ( s e t q SP x ( r a n d o m ) ) C-j Enter ( s e t q SP y ( r a n d o m ) )
+
+4. ( * SP x SP y ) C-j gave me the incorrect mathematical product 
+
+5. Got the same incorrect result but with some paranthesis in the output  
+
+6. Both the random numbers are extremely large numbers that are not really random but pseudo random becuase they are based on the same initial seed or follow some sort of rule. 
+
+7. Assuming that random is truly a random function we will have very low probability of getting an incorrect result since the numbers generated are genuinely random. 
+ 

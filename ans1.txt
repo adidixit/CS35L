@@ -1,0 +1,66 @@
+Name: Aditya Dixit
+UID: 504631002
+
+Prof: Paul Eggert
+TA: Farnoosh Javadi 
+
+Lab #0 
+ans1.txt
+
+1. man -k keyword will search for the keyword in the man page. 
+
+2. the command- which cp prints the location of cp (repeat for wc). 
+/usr/local/cs/bin/cp 
+/usr/local/cs/bin/wc 
+
+3. By typing /usr/local/cs/bin -name "?", we can find all such functions. And by looking up the man page, we can find out what these functions do. 
+[ - conditional expression
+X - portable, network transparent window system  
+w - shows the users that are logged in and their activities.
+
+4. cd /usr/local/cs/bin to enter the repository. 
+ls -l "emacs" will show us that the symbolic link actually executes the file /etc/alternatives/emacs.
+
+5. g+s - gives the user permission of a group for the file 
+o-x removes the executable permisssion for others for the file in question.
+
+6. find -mtime -21 shows all the files. Found the answer in the man find page.
+
+7. find -type d -mtime -21 will show all directories modified in the last 3 weeks.
+
+8. Looking for hints in man find: 
+find -type l in the /usr/bin directory shows that there are 287 symbolic links. 
+
+9. Enter lib directory using cd /usr/lib 
+ls -lt will sort out the files with the newest at the top. 
+The last file on the bottom that doesn't start with a d is the oldest regular file. 
+
+10. man locale tells us that its data is determined by the settings of the environment variables 
+find /usr -name locale
+
+11. We can find the commands in emacs by typin: 
+C-h a sort and here are some results we get: 
+sort-lines
+sort-pages
+sort-fields
+sort-columns
+rmail-sort-by-author
+rmail-sort-by-date
+rmail-sort-by-labels
+rmail-sort-by-lines
+rmail-sort-by-recipient
+rmail-sort-by-subject
+
+12. 
+C -M-a = move to the start of the function
+C -M-b = move backward over next balanced expression
+C -M-c = exit recursive edit (exit from innermost)
+C -M-d = move down one level of paranthesis 
+C -M-e = move to next end of defun 
+C -M-f = move forward one balanced expression 
+
+13. C-h k C-g tells us what C-g does which is cancel the current command. 
+
+14. The yank function (or C-y) is used to re-insert previously removed text. 
+
+15. The emacs dired function shows total available memory but ls -l only shows the space used.  

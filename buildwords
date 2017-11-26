@@ -1,0 +1,42 @@
+#Lab 2
+#buildwords
+
+#Aditya Dixit
+# UID 504631002
+# TA - Farnoosh Javadi
+
+
+#!/bin/sh
+
+#select all the words between the <td> tags
+grep "<td>.*</td>"
+
+#move all characters to lower case 
+tr [:upper:] [:lower:] |
+
+#removing all the HTML tags
+sed 's/<[^>]*>//g' |
+
+#will replace ` with '
+sed "s/\`/\'/g" |
+
+#will remove blank lines
+sed '/^\s*$/d' |
+
+#delete all the English words
+sed '1~2d'
+
+#will replace spaces with new lines
+sed 's/ /\n/g' |
+
+#will replace commas with new lines
+sed 's/,/\n/g' |
+
+#delete newlines
+sed '/^$/d' |
+
+#will isolate all the Hawaiian words
+grep -v "[^pk'mnwlhaeiou]" |
+
+#sort and display unique items
+sort -u 
